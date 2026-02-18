@@ -5,7 +5,6 @@ import sys
 def get_link_prediction_args():
     # arguments
     parser = argparse.ArgumentParser('Interface for the link prediction task')
-    parser.add_argument('--eval_dataset', type=int, default=0, help="Dataset for evaluation")
     parser.add_argument('--batch_size', type=int, default=1, help='batch size')
     parser.add_argument('--run_name', type=str, default='base', help='name of the model, note that EdgeBank is only applicable for evaluation')
     parser.add_argument('--gpu', type=int, default=0, help='number of gpu to use. However, Policy4OOD is trained on CPU by default.')
@@ -27,8 +26,6 @@ def get_link_prediction_args():
     parser.add_argument('--ood', action="store_true", default=False, help="whether evaluate in OOD setting")
     parser.add_argument('--inference_only', action="store_true", default=False, help="whether skip pre-train and do inference")
     parser.add_argument('--range', type=int, default=-1, help='Specify a time range for case study')
-    parser.add_argument('--state', type=str, default='', help='Specify a state for counterfactual analysis')
-    parser.add_argument('--time_delta', type=int, default=0, help='Specify the time change for counterfactual analysis')
 
     try:
         args = parser.parse_args()
