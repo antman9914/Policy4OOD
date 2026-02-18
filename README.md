@@ -12,9 +12,7 @@ The overall framework is featured by:
 
 - **End-to-end data-driven world-model-based policy simulation**: A policy-conditioned spatio-temporal world model is designed to serve as a differentiable simulator, supporting forward forecasting, counterfactual analysis, and policy optimization within a unified framework.
 
-- **Structured policy understanding via knowledge graphs**: Convert raw legislative documents into structured policy knowledge graphs, preserving relational semantics among policy instruments and enabling explicit reasoning over multi-policy interactions.
-
-- **Canonical intervention discovery with vector quantization**: Discover reusable and interpretable intervention strategies through a shared VQ codebook, reducing policy sparsity and enabling generalization across states, time periods, and unseen policy combinations.
+- **Structured policy understanding via knowledge graphs**: Convert raw legislative documents into structured policy knowledge graphs and reusable VQ codebook, enabling explicit reasoning over multi-policy interactions and the generalization across states.
 
 - **Spatial dependency modeling**: Model cross-state spillover effects using a spatial graph neural network over geographical adjacency, capturing diffusion of opioid overdose and regional policy interactions.
 
